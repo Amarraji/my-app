@@ -10,3 +10,10 @@
       pip:
         name: docker-py
         state: present
+    - name: Start the container
+      docker_container:
+        name: my-app
+        image: "amarraji/my-app:${{DOCKER_TAG}}"
+        state: started
+        published_ports:
+          - 0:0:0:0:8080:8080
