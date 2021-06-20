@@ -1,2 +1,2 @@
 [dev]
-10.122.0.3 ansible_user=sonar
+10.122.0.3 ansible_user=root
